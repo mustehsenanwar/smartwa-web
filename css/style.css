@@ -512,10 +512,34 @@ section {
     border-radius: var(--border-radius);
     box-shadow: var(--shadow);
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.4s ease;
+    z-index: -1;
 }
 
 .feature-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 .feature-icon {
@@ -525,62 +549,205 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(51, 102, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
 }
 
-.feature-icon img {
-    max-width: 100%;
-    max-height: 100%;
-    opacity: 0.9;
+.feature-icon svg {
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
 }
 
-/* How It Works Section */
+.feature-card:hover .feature-icon {
+    background-color: var(--primary-color);
+}
+
+.feature-card:hover .feature-icon svg {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* How It Works Section - Enhanced */
 .how-it-works {
     text-align: center;
+    background-color: var(--light-color);
+    padding: 6rem 0;
+    position: relative;
 }
 
-.how-it-works h2 {
-    margin-bottom: 3rem;
+.how-it-works::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gray-medium), transparent);
+    opacity: 0.5;
+}
+
+.section-subtitle {
+    color: var(--gray-dark);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-container {
+    position: relative;
+    margin: 4rem 0;
+    padding: 1rem 0;
+}
+
+.steps-connection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    z-index: 1;
+    border-radius: 4px;
 }
 
 .steps {
     display: flex;
-    justify-content: center;
-    gap: 3rem;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
 }
 
 .step {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 200px;
+    max-width: 280px;
+    position: relative;
+    background-color: var(--light-color);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.step-icon-wrapper {
+    position: relative;
+    margin-bottom: 1.5rem;
 }
 
 .step-number {
     width: 36px;
     height: 36px;
-    background-color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: 700;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .step-icon {
     width: 80px;
     height: 80px;
-    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgba(51, 102, 255, 0.1);
+    border-radius: 50%;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
-.step-icon img {
-    max-width: 100%;
-    max-height: 100%;
+.step:hover .step-icon {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+.step-content {
+    text-align: center;
+}
+
+.step-content h3 {
+    margin-bottom: 0.8rem;
+    color: var(--primary-color);
+}
+
+.step-content p {
+    color: var(--text-color);
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+.start-now-cta {
+    margin-top: 3rem;
+}
+
+.pulse-button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(51, 102, 255, 0.25);
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.pulse-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    transform: scale(0);
+    animation: pulse 2s infinite;
+}
+
+.pulse-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(51, 102, 255, 0.3);
+    color: white;
+}
+
+.start-now-cta p {
+    margin-top: 1rem;
+    color: var(--gray-dark);
+    font-size: 0.9rem;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
 }
 
 /* Final CTA Section */
@@ -631,18 +798,6 @@ footer a:hover {
 }
 
 /* Animations */
-@keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 @keyframes float {
     0% {
         transform: translateY(0);
@@ -728,6 +883,10 @@ footer a:hover {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .steps-connection {
+        width: 90%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -746,6 +905,20 @@ footer a:hover {
     .steps {
         flex-direction: column;
         align-items: center;
+        gap: 3rem;
+    }
+    
+    .steps-connection {
+        display: none;
+    }
+    
+    .step {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .step:hover {
+        transform: translateY(-5px);
     }
     
     .problem-solution {
