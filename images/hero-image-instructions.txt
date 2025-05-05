@@ -1,0 +1,22 @@
+HERO IMAGE INSTRUCTIONS
+
+For the SmartWA landing page, place the following image in this directory:
+
+Filename: hero-image.png
+
+Recommended Resources:
+1. For testing: Use https://via.placeholder.com/550x400?text=SmartWA+Automation
+   You can download this image and save it as hero-image.png
+
+2. For a better-looking temporary image, download a free illustration from:
+   - https://undraw.co/illustrations (search for "chat" or "messaging")
+   - https://storyset.com/ (search for "messaging" or "whatsapp")
+
+3. When ready for production:
+   Create a professional image showing:
+   - A smartphone with WhatsApp interface
+   - Example of automated responses
+   - Possibly an AI visualization element
+   - Size recommendation: 550px width, 400-450px height
+
+The hero image is a critical element of the landing page, so invest in high-quality visuals for the production version. 

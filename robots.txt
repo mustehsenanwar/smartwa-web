@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://smartwa.online/sitemap.xml 

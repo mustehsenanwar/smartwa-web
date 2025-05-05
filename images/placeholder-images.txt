@@ -1,0 +1,26 @@
+PLACEHOLDER IMAGES NEEDED:
+
+1. Hero Image: 
+   - Filename: hero-image.png
+   - Description: A modern smartphone with WhatsApp interface and a chat with automated responses
+   - Size: Approximately 600x400px
+
+2. Feature Icons:
+   - feature-automation.png - Icon representing WhatsApp automation
+   - feature-nocode.png - Icon representing "No Code/API Required"
+   - feature-qr.png - Icon representing QR code scanning
+   - feature-knowledge.png - Icon representing knowledge base integration
+   - Size: 60x60px each
+
+3. Step Icons:
+   - step-qr.png - Icon showing QR code scanning
+   - step-upload.png - Icon showing file upload
+   - step-start.png - Icon showing completed/running state
+   - Size: 80x80px each
+
+For testing the website without actual images, you can use free placeholder image services:
+- Use https://placeholder.com/ (e.g., https://via.placeholder.com/600x400)
+- Use https://placehold.co/ for colored placeholders
+- Or use images from https://undraw.co/ for professional-looking SVG illustrations
+
+Note: These are temporary placeholders. Actual branded images should be created by a professional designer to match the product's identity and style guidelines. 
