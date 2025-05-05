@@ -113,10 +113,9 @@ header .container {
     align-items: center;
 }
 
-.logo h1 {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-    margin-bottom: 0;
+.logo img {
+    max-height: 70px;
+    width: auto;
 }
 
 nav ul {
@@ -342,6 +341,12 @@ footer {
 
 .footer-logo p {
     opacity: 0.7;
+}
+
+.footer-logo img {
+    max-height: 60px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 .footer-links {
