@@ -243,15 +243,27 @@ section {
 }
 
 .floating-badge.top {
-    top: -20px;
-    right: 40px;
+    top: -37px;
+    right: -78px;
     animation-delay: 0.5s;
 }
 
 .floating-badge.bottom {
-    bottom: -15px;
+    bottom: -44px;
     left: 20px;
     animation-delay: 1s;
+}
+
+.floating-badge.right {
+    right: 223px;
+    top: -20%;
+    animation-delay: 1.5s;
+    background-color: rgba(51, 102, 255, 0.9);
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .hero-bg-shapes {
