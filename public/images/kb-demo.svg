@@ -1,0 +1,37 @@
+<svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="500" height="400" rx="8" fill="#F7FAFF"/>
+  
+  <!-- Interface Panel -->
+  <rect x="50" y="40" width="400" height="320" rx="8" fill="white" stroke="#E0E7F5" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="40" width="400" height="60" rx="8 8 0 0" fill="#4A6CF7" fill-opacity="0.1"/>
+  <text x="80" y="75" font-family="Arial, sans-serif" font-weight="bold" font-size="16" fill="#4A6CF7">Knowledge Base Upload</text>
+  
+  <!-- Tab Bar -->
+  <rect x="70" y="120" width="100" height="35" rx="4" fill="#4A6CF7"/>
+  <text x="95" y="142" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="white">Files</text>
+  
+  <rect x="170" y="120" width="100" height="35" rx="4" fill="#E0E7F5"/>
+  <text x="185" y="142" font-family="Arial, sans-serif" font-size="12" fill="#4A6CF7">Website</text>
+  
+  <rect x="270" y="120" width="100" height="35" rx="4" fill="#E0E7F5"/>
+  <text x="305" y="142" font-family="Arial, sans-serif" font-size="12" fill="#4A6CF7">Q&A</text>
+  
+  <!-- Upload Area -->
+  <rect x="70" y="170" width="360" height="120" rx="8" fill="#F5F8FF" stroke="#C9D4F0" stroke-width="2" stroke-dasharray="4 4"/>
+  
+  <!-- Upload Icon -->
+  <circle cx="250" cy="210" r="30" fill="#4A6CF7" fill-opacity="0.1"/>
+  <path d="M250 195V225M235 210H265" stroke="#4A6CF7" stroke-width="2" stroke-linecap="round"/>
+  
+  <text x="180" y="255" font-family="Arial, sans-serif" font-size="14" fill="#6C757D">Drag files here or click to upload</text>
+  
+  <!-- Button -->
+  <rect x="315" y="310" width="115" height="35" rx="4" fill="#4A6CF7"/>
+  <text x="345" y="332" font-family="Arial, sans-serif" font-weight="bold" font-size="12" fill="white">Upload</text>
+  
+  <!-- File Types -->
+  <text x="70" y="325" font-family="Arial, sans-serif" font-size="12" fill="#6C757D">Supports: PDF, DOCX, JPG, PNG</text>
+</svg> 

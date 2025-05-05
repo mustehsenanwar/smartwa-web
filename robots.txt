@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.smartwa.online/sitemap.xml 
+Sitemap: https://smartwa.online/sitemap.xml 
